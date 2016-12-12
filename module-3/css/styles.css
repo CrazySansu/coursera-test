@@ -2,7 +2,7 @@ body{
 	background-color: white;
 }
 .container{
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -13,11 +13,14 @@ body{
 #header-nav{
 	position: static;
 	background-color: #8F96FF;
+	/*height: 100px;*/
+}
+#brand{
 	height: 100px;
+	text-align: center;
 }
 #brand a{
 	color: white;
-	height: 100px;
 }
 #brand a:hover , #brand a:focus{
 	text-decoration: none;
@@ -67,20 +70,20 @@ body{
 	
 }
 /*end of main content*/
-@media (min-width: 768px) and (max-width: 991px){
-.container{
+@media (min-width: 768px) and (max-width: 991px){  /*medium*/
+/*.container{
+	width: 100%;
+	margin: 0;*/
+}
+}
+@media (max-width: 767px){							/*small*/
+/*.container{
 	width: 100%;
 	margin: 0;
-}
-}
-@media (max-width: 767px){
-.container{
-	width: 100%;
-	margin: 0;
-}
+}*/
 #header-nav{
 	margin: 0;
-	height: 100px;
+	/*height: 100px;*/
 }
 #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
